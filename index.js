@@ -87,6 +87,16 @@ const zoomBtnMinus = document.querySelector('.zoom__btn_type_minus');
 const map = document.querySelector('.map');
 // map.style.transform = map.style.WebkitTransform = map.style.MsTransform = 'scale(1.5)';
 
+console.log(countriesClassName)
+
+const newArray = Array.from(countriesClassName)
+
+newArray.forEach(element => {
+  element.setAttribute("fill", colors[Math.floor(Math.random() * colors.length)])
+});
+
+
+
 for (i = 0; countriesClassName.length > i; i++) {
   countriesClassName[i].addEventListener('click', function () {
     // console.log(countriesCheckedClassName[0])
@@ -180,7 +190,7 @@ function compareAnswer() {
     matchCountry.classList.remove('country_type_checked');
 
     // matchCountry.classList.add('country_type_match');
-    matchCountry.setAttribute("fill", colors[Math.floor(Math.random() * colors.length)])
+    matchCountry.setAttribute("fill", "#FFFFFF")
     totalRightAnswers.push(matchCountryName)
     console.log(totalRightAnswers)
     // return true
