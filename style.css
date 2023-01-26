@@ -442,9 +442,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .map {
+  /* .map {
     max-width: 768px;
-  }
+  } */
 
   .container__form {
     width: 220px;
@@ -467,8 +467,8 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   .map {
     max-width: 425px;
   }
-}
+} */
